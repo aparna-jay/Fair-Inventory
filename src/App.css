@@ -1,0 +1,165 @@
+/* Default styles for larger screens */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-section, .right-section {
+  width: 48%;
+}
+
+/* Styling for inventory items */
+.inventory .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Space between item name and quantity */
+.item-name {
+  flex: 2;
+  font-weight: bold;
+}
+
+.item-quantity {
+  flex: 1;
+  text-align: center;
+  color: #555;
+}
+
+/* Style for the input and button */
+.inventory input {
+  width: 60px;
+  padding: 5px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.inventory button {
+  padding: 8px 12px; /* Reduced padding */
+  font-size: 14px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inventory button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.inventory button:disabled {
+  background-color: #ccc; /* Light gray background */
+  color: #666; /* Darker gray text */
+  cursor: not-allowed; /* Change cursor to indicate it's disabled */
+  opacity: 0.6; /* Slightly faded look */
+}
+
+
+
+/* Shopping cart styles */
+.cart-item {
+  font-size: 16px;
+  margin: 8px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Total bill section */
+.totals-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.totals h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  align-content: center;
+}
+
+/* Reset button */
+.reset-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.reset-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Sales history styling */
+.sale-entry {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Mobile specific styles */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+  }
+
+  .inventory .item {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .inventory input {
+    width: 50px;
+  }
+
+  .totals h3 {
+    font-size: 18px;
+  }
+
+  .reset-btn {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
+.remove-btn {
+  background-color: white;
+  color: red;
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  margin-left: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: darkred;
+}
